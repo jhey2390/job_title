@@ -4,7 +4,7 @@ recat_cargolab = function(Cargo.laboral){
   x = x %>%
     mutate(x = chartr('ÁÉÍÓÚÀÈÌÒÙ','AEIOUAEIOU',toupper(x))) %>%
     mutate(Cargo.laboral.recat = case_when(
-      str_detect(x,'((DOC|PROF)+.+INNOV+.+PEDAG)|((DOC|PROF)+.+(AIP|INNOV))|(PIP|AIP)') ~ 'DOCENTE DE AULA DE INNOVACION PEDAGOGICA - DAIP',
+      str_detect(x,'((DOC|PROF)+.+INNOV+.+PEDAG)|((DOC|PROF)+.+(AIP|INNOV))|(PIP|AIP)') ~ 'PROFESOR DE INNOVACION PEDAGOGICA - PIP',
       str_detect(x,'ADMIN|OFI[N]*CI|SECRE|(PERS+.+ADMIN)|PLANILL|VIGILA|PERSON|REMUNER') ~ 'PERSONAL ADMINISTRATIVO',
       str_detect(x,'GEST+.+PEDAG') ~ 'JEFE DE GESTION PEDAGOGICA',
       str_detect(x,'CO[O]*RD+.+ACAD') ~ 'COORDINADOR ACADEMICO',
