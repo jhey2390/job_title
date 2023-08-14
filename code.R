@@ -46,7 +46,7 @@ recat_cargolab = function(Cargo.laboral){
       str_detect(x,'(DOC|PROF)+.+((TEC+.+PROD)|(ETP)|EPT|E\\.T\\.P)') ~ 'DOCENTE ETP',
       str_detect(x,'ETP|(TEC+.+PROD)') ~ 'OTROS CARGOS EN ETP',
       str_detect(x,'CIST') ~ 'COORDINADOR DE INNOVACION Y SOPORTE TECNOLOGICO - CIST',
-      str_detect(x,'INNOV|DAIP') ~ 'DOCENTE DE AULA DE INNOVACION PEDAGOGICA - DAIP',
+      str_detect(x,'INNOV|DAIP') ~ 'PROFESOR DE INNOVACION PEDAGOGICA - PIP',
       str_detect(x,'AUXIL') ~ 'AUXILIAR',
       str_detect(x,'(CO[O]*R+.+(RER|RURAL))|(C*+RER)') ~ 'COORDINADOR RER',
       str_detect(x,'CO[O]*R+.+(RED)') ~ 'COORDINADOR RED',
