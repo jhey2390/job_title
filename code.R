@@ -35,7 +35,7 @@ recat_cargolab = function(Cargo.laboral){
       str_detect(x,'DIRECT') ~ 'DIRECTOR',
       str_detect(x,'(DOC|PROF)+.+INI+.+PRIM+.+SEC') ~ 'DOCENTE DE INICIAL, PRIMARIA Y SECUNDARIA',
       str_detect(x,'(DOC|PROF)+.+PRIM+.+SEC') ~ 'DOCENTE DE PRIMARIA Y SECUNDARIA',
-      str_detect(x,'(DOC|PROF|^ED)+.+IN*C') ~ 'DOCENTE DE INICIAL',
+      str_detect(x,'(DOC|PROF|^ED)+.+IN?C') ~ 'DOCENTE DE INICIAL',
       str_detect(x,'INIC') ~ 'OTROS CARGOS EN INICIAL',
       str_detect(x,'(DOC|PROF)+.+PRIM') ~ 'DOCENTE DE PRIMARIA',
       str_detect(x,'PRIM') ~ 'OTROS CARGOS EN PRIMARIA',
